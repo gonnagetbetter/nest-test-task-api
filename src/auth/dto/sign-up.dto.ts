@@ -1,5 +1,4 @@
 import { z } from 'zod'
-import { createZodDto } from 'nestjs-zod'
 import { SignInSchema } from './sign-in.dto'
 
 export const SignUpSchema = SignInSchema.extend({

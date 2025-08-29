@@ -26,9 +26,6 @@ export class AuthGuard implements CanActivate {
     }
 
     const token = authHeader.split(' ')[1]
-    if (typeof token !== 'string') {
-      throw new UnauthorizedException('Invalid token format')
-    }
 
     let payload
 

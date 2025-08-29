@@ -1,5 +1,4 @@
 import { z } from 'zod'
-import { createZodDto } from 'nestjs-zod'
 
 export const SignInSchema = z.object({
   email: z.email().nonempty({ message: 'Email is required' }),
